@@ -4911,11 +4911,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ANDREA\\source\\repos\\AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
+      "projectUniqueName": "C:\\Users\\ANDREA\\source\\repos\\-AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
       "projectName": "AscomSWEngineerTest2",
-      "projectPath": "C:\\Users\\ANDREA\\source\\repos\\AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
+      "projectPath": "C:\\Users\\ANDREA\\source\\repos\\-AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
       "packagesPath": "C:\\Users\\ANDREA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ANDREA\\source\\repos\\AscomSWEngineerTest2\\AscomSWEngineerTest2\\obj\\",
+      "outputPath": "C:\\Users\\ANDREA\\source\\repos\\-AscomSWEngineerTest2\\AscomSWEngineerTest2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

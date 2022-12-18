@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZcImr28fwpgrBthaYqyFjX79aFeNYjK7TsjSN9atFHghtwASC2KuInp56Ye8flyhSnez6iaym5ZbXZTbANkzrw==",
+  "dgSpecHash": "hncGXiOfuwd1gInfBbIiDu1Hx4t7Ax8yMdf/joyhe1GyYFswS/LngmmtvwSalbWeDBCXzGd7WaQs+9QTzprOTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ANDREA\\source\\repos\\AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
+  "projectFilePath": "C:\\Users\\ANDREA\\source\\repos\\-AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ANDREA\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ANDREA\\.nuget\\packages\\jquery\\1.9.1\\jquery.1.9.1.nupkg.sha512",
