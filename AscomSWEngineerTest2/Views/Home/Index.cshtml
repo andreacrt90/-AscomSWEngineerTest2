@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="login" class="text-center">
+    <h1 class="display-4">Benvenuto</h1>
+    <div id="loginContent" class="mt-1">
+        <span>Username</span><br />
+        <input type="text" id="username" /><br />
+        <span>Password</span><br />
+        <input type="password" id="password" /><br /><br />
+        <button onclick="location.href='@Url.Action("Login", "Home")'">Entra</button>
+        <button onclick="location.href='@Url.Action("PatientsList", "PatientsArea")'">Entra</button>
+    </div>
+</div>

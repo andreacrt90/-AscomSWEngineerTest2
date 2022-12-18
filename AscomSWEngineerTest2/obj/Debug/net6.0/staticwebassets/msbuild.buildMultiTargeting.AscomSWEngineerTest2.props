@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AscomSWEngineerTest2.props" />
+</Project>
