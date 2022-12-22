@@ -44,9 +44,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Grid.Mvc": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.32, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
             "KendoUICore": {
               "target": "Package",
               "version": "[2022.3.1109, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
@@ -71,6 +87,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "NonFactors.Grid.Mvc6": {
+              "target": "Package",
+              "version": "[7.1.0, )"
             },
             "SQLite": {
               "target": "Package",

@@ -27,9 +27,8 @@ namespace AscomSWEngineerTest2.Models
         /// </summary>
         public DateTime? LastSelectedDate { get; set; }
 
-        public Patient(int id, string familyName, string givenName)
+        public Patient(string familyName, string givenName)
         {
-            Id = id;
             FamilyName = familyName;
             GivenName = givenName;
         }

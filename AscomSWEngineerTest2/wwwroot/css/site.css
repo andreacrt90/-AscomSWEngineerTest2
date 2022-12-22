@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+ul {
+    list-style: none;
+}
+#login {
+    max-width: 300px;
+    margin: 0px auto;
+}

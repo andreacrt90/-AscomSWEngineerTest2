@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AscomSWEngineerTest2</title>
+    <title>@ViewData["Title"] - ASSWEngineerTest2</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AscomSWEngineerTest2.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mvc-grid/mvc-grid.css">
 </head>
 <body>
     <header>
@@ -33,6 +34,11 @@
     <div class="container">
         <main role="main">
             @RenderBody()
+
+            <script src="~/js/mvc-grid/mvc-grid.js"></script>
+            <script>
+                document.querySelectorAll(".mvc-grid").forEach(element => new MvcGrid(element));
+            </script>
         </main>
     </div>
 

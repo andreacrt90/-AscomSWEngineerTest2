@@ -1,4 +1,6 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const grid = document.querySelector(".mvc-grid");
 
-// Write your JavaScript code.
+// Triggered when grid's row is clicked. It's recommended to use event delegation in ajax scenarios.
+document.addEventListener("rowclick", e => {
+    viewPatient(e);
+});

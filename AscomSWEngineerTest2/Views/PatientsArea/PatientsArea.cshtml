@@ -1,0 +1,31 @@
+﻿@model IQueryable<Patient>;  
+  
+@using NonFactors.Mvc.Grid;
+
+@{
+    ViewData["Title"] = "Patients Area";
+}
+<h1>@ViewData["Title"]</h1>
+
+@(Html
+    .Grid(Model)
+    .Build(columns =>
+    {
+        columns.Add(model => model.Id).Titled("Id");
+        columns.Add(model => model.FamilyName).Titled("FamilyName");
+        columns.Add(model => model.GivenName).Titled("GivenName");
+        columns.Add(model => model.LastSelectedDate).Titled("LastSelectedDate");
+    })
+    .Using(GridFilterMode.Header)
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+    .Pageable()
+)
+
+<script>
+    function viewPatient(e)
+    {
+        window.location = '@Url.Action("Patient", "Patient")?id=' + e.detail.data.Id;
+    }
+</script>

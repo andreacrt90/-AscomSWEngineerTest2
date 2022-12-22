@@ -1,7 +1,7 @@
-﻿using AscomSWEngineerTest2.Helpers;
+﻿using AscomSWEngineerTest2.Crypt;
+using AscomSWEngineerTest2.Helpers;
 using AscomSWEngineerTest2.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
 
 namespace AscomSWEngineerTest2.Controllers
@@ -27,10 +27,25 @@ namespace AscomSWEngineerTest2.Controllers
             return View();
         }
 
-        public IActionResult Login()
-        {
-            return View("PatientsArea");
-        }
+        public IActionResult Login(UserLogin userLogin)
+		{
+            if (!ModelState.IsValid)
+			{
+				return View("Index");
+			}
+
+            // first auth (BasicAuthenticationHandler block request and return 401)
+            DataContext context = new DataContext(_configuration);
+            if (context.Users.Where(x => x.Username == userLogin.Username && x.Password == AesCrypter.Encrypt(userLogin.Password)).Count() == 0)
+            {
+                return View("Index");
+            }
+
+			Session.Username = userLogin.Username;
+			Session.Password = userLogin.Password;
+
+            return RedirectToAction("PatientsArea", "PatientsArea");
+		}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
