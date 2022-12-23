@@ -29,16 +29,20 @@ namespace AscomSWEngineerTest2.Controllers
             IQueryable<Patient> patientsList = context.Patients;
 
             RecurringJob.AddOrUpdate("addpatient", () => AddPatient(), "*/30 * * * * *");
-            var jobId = BackgroundJob.Schedule(() => RemoveCron(), TimeSpan.FromSeconds(30));
+            string jobId;
+
+            Random randomC = new Random();
+            int randomChoice = randomC.Next(0,2);
+
+            if (randomChoice == 0) {
+                jobId = BackgroundJob.Schedule(() => AddPatient(), TimeSpan.FromSeconds(30));
+            }
+            else
+            {
+                jobId = BackgroundJob.Schedule(() => RemovePatient(), TimeSpan.FromSeconds(30));
+            }
 
             return View(patientsList);
-        }
-
-        [Authorize]
-        public PartialViewResult RefreshGrid()
-        {
-            IQueryable<Patient> patientsList = context.Patients;
-            return PartialView("PatientsList", patientsList);
         }
 
         [Authorize]
@@ -57,13 +61,6 @@ namespace AscomSWEngineerTest2.Controllers
 
             context.Patients.Add(newPatient);
             context.SaveChanges();
-
-            RefreshGrid();
-        }
-
-        [Authorize]
-        public void RemoveCron() {
-            RecurringJob.AddOrUpdate("removepatient", () => RemovePatient(), "*/30 * * * * *");
         }
 
         [Authorize]
@@ -74,8 +71,6 @@ namespace AscomSWEngineerTest2.Controllers
             {
                 context.Patients.Remove(patient);
                 context.SaveChanges();
-
-                RefreshGrid();
             }
         }
 

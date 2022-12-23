@@ -5,7 +5,10 @@
 @{
     ViewData["Title"] = "Patients Area";
 }
-<h1>@ViewData["Title"]</h1>
+
+<button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("Logout","Home")'">Logout</button>
+
+<h1 class="mt-4">@ViewData["Title"]</h1>
 
 @(Html
     .Grid(Model)
@@ -20,10 +23,16 @@
     .Empty("No data found")
     .Filterable()
     .Sortable()
-    .Pageable()
 )
 
+<form asp-controller="PatientsArea" asp-action="PatientsArea" method="post" id="refreshGrid">
+</form>
+
 <script>
+    setTimeout(function () {
+        $("#refreshGrid").submit();
+    }, 30000);
+
     function viewPatient(e)
     {
         window.location = '@Url.Action("Patient", "Patient")?id=' + e.detail.data.Id;

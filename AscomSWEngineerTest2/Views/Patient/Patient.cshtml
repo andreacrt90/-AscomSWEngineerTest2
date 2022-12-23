@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "Patient";
 }
-<h1>Patient: @Model.FamilyName @Model.GivenName</h1>
+
+<button class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("PatientsArea","PatientsArea")'">Back to list</button>
+<h1 class="mt-4">Patient: @Model.FamilyName @Model.GivenName</h1>
 <span>LastSelectedDate: @Model.LastSelectedDate</span>
 

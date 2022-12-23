@@ -1,8 +1,10 @@
 ﻿using AscomSWEngineerTest2.Crypt;
 using AscomSWEngineerTest2.Helpers;
 using AscomSWEngineerTest2.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Cryptography;
 
 namespace AscomSWEngineerTest2.Controllers
 {
@@ -36,16 +38,26 @@ namespace AscomSWEngineerTest2.Controllers
 
             // first auth (BasicAuthenticationHandler block request and return 401)
             DataContext context = new DataContext(_configuration);
-            if (context.Users.Where(x => x.Username == userLogin.Username && x.Password == AesCrypter.Encrypt(userLogin.Password)).Count() == 0)
+
+            if (context.Users.Where(x => x.Username == userLogin.Username && x.Password == Encryptor.MD5Hash(userLogin.Password)).Count() == 0)
             {
                 return View("Index");
             }
 
-			Session.Username = userLogin.Username;
-			Session.Password = userLogin.Password;
+            Session.Username = userLogin.Username;
+			Session.Password = Encryptor.MD5Hash(userLogin.Password);
 
             return RedirectToAction("PatientsArea", "PatientsArea");
 		}
+
+        [Authorize]
+        public IActionResult Logout()
+        {
+            Session.Username = null;
+            Session.Password = null;
+
+            return RedirectToAction("Index", "Home");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
