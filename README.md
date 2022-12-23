@@ -8,6 +8,7 @@ il progetto prevede una pagina di login iniziale che gestisce l'autenticazione d
 
 Il progetto è stato realizzato in C# utilizzando il pattern architetturale MVC e .Net 6, includento EntityFramework.
 Come Database è stato scelto di usare SQLite con la versione In-Memory, in modo tale da mantenere il DB in locale (file: "LocalDatabase.db" nella root).
+L'algoritmo di criptazione MD5 è stato scelto per criptare le password.
 
 # Pacchetti NuGet
 
