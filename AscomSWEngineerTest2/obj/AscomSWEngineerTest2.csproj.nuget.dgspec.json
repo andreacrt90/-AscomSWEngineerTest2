@@ -56,10 +56,6 @@
               "target": "Package",
               "version": "[1.7.0, )"
             },
-            "KendoUICore": {
-              "target": "Package",
-              "version": "[2022.3.1109, )"
-            },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"

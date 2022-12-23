@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v1XHz3/DE/hgsypZ6LvDKSlLCBD7B2odxkoN1/mVnBIOr5p2Y9qGbDaq9J/1Kl2hBMp9e2YoEpM2pQwWa8wwLg==",
+  "dgSpecHash": "Te8QEDEKs0YicgJ50LF1ine3hu3R82mr2sR2ksW8u3SYauie04aeUuP8upAGo+aZdKJC+xmzuxGOQjFppPh0pA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ANDREA\\source\\repos\\-AscomSWEngineerTest2\\AscomSWEngineerTest2\\AscomSWEngineerTest2.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,6 @@
     "C:\\Users\\ANDREA\\.nuget\\packages\\hangfire.memorystorage\\1.7.0\\hangfire.memorystorage.1.7.0.nupkg.sha512",
     "C:\\Users\\ANDREA\\.nuget\\packages\\hangfire.sqlserver\\1.7.32\\hangfire.sqlserver.1.7.32.nupkg.sha512",
     "C:\\Users\\ANDREA\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\ANDREA\\.nuget\\packages\\jquery\\1.9.1\\jquery.1.9.1.nupkg.sha512",
-    "C:\\Users\\ANDREA\\.nuget\\packages\\kendouicore\\2022.3.1109\\kendouicore.2022.3.1109.nupkg.sha512",
     "C:\\Users\\ANDREA\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\ANDREA\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ANDREA\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
