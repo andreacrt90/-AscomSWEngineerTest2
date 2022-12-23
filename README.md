@@ -2,11 +2,11 @@
 
 # Descrizione
 
-il progetto prevede una pagina di login iniziale che gestisce l'autenticazione degli utenti attraverso un form, per poi atterrare, una volta autorizzati, ad una schermata con la lista dei pazienti, cliccabili singolarmente.
+Il progetto prevede una pagina di login iniziale che gestisce l'autenticazione degli utenti attraverso un form, per poi atterrare, una volta autorizzati, ad una schermata con la lista dei pazienti, cliccabili singolarmente.
 
 # Tecnologie
 
-Il progetto è stato realizzato in C# utilizzando il pattern architetturale MVC e .Net 6, includento EntityFramework.
+Il progetto è stato realizzato in C# utilizzando il pattern architetturale MVC e .Net 6, includendo EntityFramework.
 Come Database è stato scelto di usare SQLite con la versione In-Memory, in modo tale da mantenere il DB in locale (file: "LocalDatabase.db" nella root).
 L'algoritmo di criptazione MD5 è stato scelto per criptare le password.
 
