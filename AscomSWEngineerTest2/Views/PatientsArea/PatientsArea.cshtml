@@ -29,9 +29,9 @@
 </form>
 
 <script>
-    setTimeout(function () {
-        $("#refreshGrid").submit();
-    }, 30000);
+    document.addEventListener("rowclick", e => {
+        viewPatient(e);
+    });
 
     function viewPatient(e)
     {

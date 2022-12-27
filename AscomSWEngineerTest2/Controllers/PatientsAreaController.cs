@@ -28,18 +28,16 @@ namespace AscomSWEngineerTest2.Controllers
         {
             IQueryable<Patient> patientsList = context.Patients;
 
-            RecurringJob.AddOrUpdate("addpatient", () => AddPatient(), "*/30 * * * * *");
             string jobId;
 
-            Random randomC = new Random();
-            int randomChoice = randomC.Next(0,2);
-
-            if (randomChoice == 0) {
+            if (Session.Insert) {
                 jobId = BackgroundJob.Schedule(() => AddPatient(), TimeSpan.FromSeconds(30));
+                Session.Insert = false;
             }
             else
             {
                 jobId = BackgroundJob.Schedule(() => RemovePatient(), TimeSpan.FromSeconds(30));
+                Session.Insert = true;
             }
 
             return View(patientsList);

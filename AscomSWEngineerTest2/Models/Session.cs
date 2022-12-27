@@ -12,5 +12,10 @@
         /// Password of the session user
         /// </summary>
         public static string Password;
+
+        /// <summary>
+        /// var for alternate insert and delete
+        /// </summary>
+        public static bool Insert = true;
     }
 }

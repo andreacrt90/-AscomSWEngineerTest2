@@ -11,7 +11,6 @@
           "Grid.Mvc": "3.0.0",
           "Hangfire": "1.7.32",
           "Hangfire.MemoryStorage": "1.7.0",
-          "KendoUICore": "2022.3.1109",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.Data.Sqlite.Core": "7.0.1",
           "Microsoft.EntityFrameworkCore": "7.0.1",
@@ -135,12 +134,6 @@
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
           }
-        }
-      },
-      "jQuery/1.9.1": {},
-      "KendoUICore/2022.3.1109": {
-        "dependencies": {
-          "jQuery": "1.9.1"
         }
       },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -865,20 +858,6 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
-    },
-    "jQuery/1.9.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
-      "path": "jquery/1.9.1",
-      "hashPath": "jquery.1.9.1.nupkg.sha512"
-    },
-    "KendoUICore/2022.3.1109": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Qojjvs2WSDem9AhgfIgQlDDig70eV3jgrURd4x69Gdjo2b6hqLAOBT0jMJBiO7U+3mGbZv70abpmFjUeJf6JPA==",
-      "path": "kendouicore/2022.3.1109",
-      "hashPath": "kendouicore.2022.3.1109.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",
